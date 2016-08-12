@@ -2,13 +2,13 @@
   (:require [views.layout :as layout]
             [hiccup.core :as h]
             [ring.util.anti-forgery :as anti-forgery]
-            [hiccup.def :refer [defelem]])
+            )
   )
 
 (defn note-form []
   [:div
    [:form {:action "/" :method "POST"}
-    (anti-forgery/anti-forgery-field)
+    ;(anti-forgery/anti-forgery-field)
     [:label {:for "note"} "Enter note here"]
     [:br]
     [:input {:type "text" :name "note"}]
@@ -26,8 +26,9 @@
 (defn display-notes [notes]
   [:div
    [:ol
-    (map
-      (fn [note] [:li (h/html (:name note))]))]])
+    [:h1 (map (fn [note] [:li (h/html (:name note))] notes))]]])
+
+;
 
 (defn index [notes]
   (layout/common "NoteTaker"

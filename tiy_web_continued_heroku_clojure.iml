@@ -13,7 +13,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Clojure-1.7.0" level="project" />
+    <orderEntry type="library" exported="" name="Clojure-1.7.0" level="project" />
     <orderEntry type="library" name="Leiningen: cider/cider-nrepl:0.8.1" level="project" />
     <orderEntry type="library" name="Leiningen: clj-antlr:0.2.2" level="project" />
     <orderEntry type="library" name="Leiningen: clj-stacktrace:0.2.8" level="project" />

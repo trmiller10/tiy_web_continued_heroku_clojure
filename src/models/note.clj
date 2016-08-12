@@ -1,12 +1,11 @@
 (ns models.note
   (:require [clojure.java.jdbc :as sql]))
 
-(def url "postgresql://localhost:5432/something")
+(def spec (or (System/getenv "DATABASE_URL")
+              "postgresql://localhost:5432/something"))
 
 (defn all []
-  (into [] (sql/query url ["select * from notes order by id desc"])))
+  (into [] (sql/query spec ["select * from notes order by id desc"])))
 
 (defn create [note]
-  (sql/insert! url :notes note))
-
-
+  (sql/insert! spec :notes [:body] [note]))

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ReplState" timestamp="1470351750283">{:repl-history {:ide [], :local [&quot;(-main)&quot; &quot;(require '[clojure.java.jdbc :as sql])&quot; &quot;(sql/query \&quot;postgresql://localhost:5432/something\&quot;\n           [\&quot;select * from notes\n           \&quot;])&quot; &quot;(sql/query \&quot;postgresql://localhost:5432/something\&quot;\n           [\&quot;select * from something\n            \n           \&quot;])&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1471029864799">{:repl-history {:ide [], :local [&quot;(print clojure.core$map$fn__4549@46fbacca\n       )&quot; &quot;(require '[clojure.java.jdbc :as sql])&quot; &quot;(sql/query \&quot;postgresql://localhost:5432/something\&quot;\n           [\&quot;select * from notes\n           \&quot;])&quot; &quot;(sql/query \&quot;postgresql://localhost:5432/something\&quot;\n           [\&quot;select * from something\n            \n           \&quot;])&quot; &quot;display-notes&quot; &quot;(display-notes\n  )&quot; &quot;(-main)&quot;], :remote []}}</component>
 </project>
